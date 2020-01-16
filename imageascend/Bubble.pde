@@ -10,14 +10,13 @@ class Bubble{
     y--;
   }
   void display(){
-    stroke(0);
-    fill(127);
-    ellipse(x,y,50,50);
-    if(x==0 || y==0){
-      x=width/2;
-      y=5;
+    //stroke(0);
+    //fill(127);
+    //ellipse(x,y,50,50);
+    imageMode(CENTER);
+    image(sc,x,y,100,100);
     }
-  }
+
   void pop(){
     x=700;
     y=700;
